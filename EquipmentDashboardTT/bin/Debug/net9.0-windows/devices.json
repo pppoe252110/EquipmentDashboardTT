@@ -1,0 +1,20 @@
+[
+  {
+    "Id": "5fb7ef17-d2a7-42bc-b319-d9021b4015b6",
+    "Name": "1234",
+    "Category": "1234",
+    "SerialNumber": "12334",
+    "InstallationDate": "2025-11-26T00:00:00+10:00",
+    "Status": "Maintenance",
+    "Error": ""
+  },
+  {
+    "Id": "dbe9f409-a3da-41a7-8f42-40a5686f9200",
+    "Name": "1234",
+    "Category": "1234",
+    "SerialNumber": "1234",
+    "InstallationDate": "2025-11-26T00:00:00+10:00",
+    "Status": "Working",
+    "Error": ""
+  }
+]
