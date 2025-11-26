@@ -27,6 +27,24 @@ namespace EquipmentDashboardTT.Models
         public DeviceStatus Status { get; set; }
         public string Error => string.Empty;
 
+        [JsonIgnore]
+        public string DisplayStatus
+        {
+            get
+            {
+                return Status switch
+                {
+                    DeviceStatus.Active => "Активен",
+                    DeviceStatus.Inactive => "Неактивен",
+                    DeviceStatus.Maintenance => "На обслуживании",
+                    DeviceStatus.Working => "Работает",
+                    DeviceStatus.Faulty => "Сломан",
+                    DeviceStatus.Decommissioned => "Списан",
+                    _ => Status.ToString()
+                };
+            }
+        }
+
         public string this[string columnName]
         {
             get
